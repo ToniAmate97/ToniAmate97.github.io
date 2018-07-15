@@ -12,8 +12,8 @@ body {
 }
 
 @mixin all-background {
-	background: -webkit-gradient(linear, left top, left bottom, from(rgb(173,255,166), to(rgb(114,219,15))));
-	background: -moz-linear-gradient(top,  rgb(173,255,255),  rgb(173,255,166));
+	background: -webkit-gradient(linear, left top, left bottom, from(#adffa6, to(#72db0f)));
+ 	background: -moz-linear-gradient(top, #adffff, #adffa6);
 }
 
 @mixin all-background-color ($color) {
@@ -21,7 +21,7 @@ body {
 }
 
 #container {
-	background: rgb(221,255,189);
+	background: #ddffbd;
 	margin: 40px auto;
 	width: 880px;
 	height: 2000px;

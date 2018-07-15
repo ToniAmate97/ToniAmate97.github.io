@@ -7,6 +7,8 @@
     <iframe width="0" height="0" src="http://youtuberepeater.com/watch?v=LYN6DRDQcjI&name=wii+theme+song+1+hour+version" frameborder="0" allowfullscreen></iframe>
     <link rel="stylesheet" type="text/css" href="css/reset.css" />
     <link rel="stylesheet" type="text/css" href="css/main.css" />
+    <link rel="shortcut icon" type="image/x-icon" href="Batman.ico" />
+    <script type="text/javascript" src="css/java.js"></script>
     <style>
       body {
         width: 100%;
@@ -16,13 +18,17 @@
       }
       .Slides {
         position:relative;
-        animation:fading 5s infinite
+        animation:fading 5s infinite;
+        display:none;
+      }
+      .Slides:first{
+         display:block;
       }
       .display {
         text-decoration: none;
       }
       .stickyGIF {
-        position: sticky;
+        position: fixed;
         top: 0;
       }
       @keyframes fading {
@@ -58,28 +64,6 @@
         font-family: Feeding;
       } 
     </style>
-    <script>
-      function alerta() {
-          alert("Comentari enviat correctament");
-      }
-      window.onload = function () {
-      var index = 0;
-      carrousel();
-        function carrousel() {
-          var i;
-          var x = document.getElementsByClassName("Slides");
-          for (i = 0; i < x.length; i++) {
-            x[i].style.display = "none";
-          }
-          index++;
-          if (index > x.length) {
-            index = 1;
-          }
-          x[index-1].style.display="block";
-          setTimeout(carrousel,2000);
-        }
-      }
-    </script>
   </head>
   <body>
     <a href ="#down" id ="up" class ="button_up_down">Go Down</a>
@@ -123,9 +107,11 @@
           </div>
           <div style="margin-left:200px">
             <a href="#"><iframe src="https://giphy.com/embed/2tNstiV7MpiHhA5DvY" width="90" height="90" alt ="gif"></iframe></a>
+            <a href="https://github.com/ToniAmate97/HTML-solved-exercises/blob/master/canvas1js.js" target="_blank">Link!</a>
           </div>
           <div style="margin-left:200px">
             <a href="#"><iframe src="https://giphy.com/embed/39wl7N0U8hQ9CbuJQ1" width="90" height="90" alt ="gif"></iframe></a>
+            <a href="https://github.com/ToniAmate97/HTML-solved-exercises/blob/master/clock.html" target="_blank">Link!</a>
           </div>
       </section>
       <section class="section education">
@@ -190,6 +176,7 @@
           <img class ="Slides" src ="img/pelota-futbol.jpg" style="width: 100%">
           <img class ="Slides" src ="img/gym.jpg" style="width: 100%">
           <img class ="Slides" src ="img/games.jpg" style="width: 100%">
+          <img class ="Slides" src ="img/music.jpg" style="width: 100%">
         </div>
       </section>
       <section class="section contact">
