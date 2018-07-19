@@ -1,14 +1,15 @@
-  var index = 0;
+var index = 0;
 
 function alerta() {
           alert("Comentari enviat correctament");
-      }
+}
+
 window.onload = function () {
 carrousel();
 setInterval(carrousel,4000);
 }
-function carrousel() {
 
+function carrousel() {
   var i;
   var x = document.getElementsByClassName("Slides");
   for (i = 0; i < x.length; i++) {
@@ -19,5 +20,4 @@ function carrousel() {
     index = 1;
   }
   x[index-1].style.display="block";
-  
 }
