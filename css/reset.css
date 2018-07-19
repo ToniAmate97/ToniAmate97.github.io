@@ -1,6 +1,4 @@
-html, body, div, span,
-h1, h2, h3, h4, h5, h6, p, 
-a, img,  ul, li, header, section {
+html, body, div, span, h1, h2, h3, h4, h5, h6, p, a, img,  ul, li, header, section {
 	margin: 0;
 	padding: 0;
 	border: 0;
@@ -8,12 +6,15 @@ a, img,  ul, li, header, section {
 	font: inherit;
 	vertical-align: baseline;
 }
+
 header, section {
 	display: block;
 }
+
 body {
 	line-height: 1;
 }
- ul {
+
+ul {
 	list-style: none;
 }
